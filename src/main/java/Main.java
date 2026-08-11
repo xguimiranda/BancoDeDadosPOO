@@ -9,5 +9,7 @@ public class Main {
         Categoria categoria = new Categoria("zyx");
         categoriaDAO.inserir(categoria);
 
+
+        categoriaDAO.listar();
     }
 }
