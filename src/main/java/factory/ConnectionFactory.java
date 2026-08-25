@@ -8,11 +8,11 @@ import java.sql.SQLException;
 import java.util.Properties;
 
 public final class ConnectionFactory {
-    private static final Properties PROPS = carregarPropriedades();
-
+    private static final Properties PROPS =
+            carregarPropriedades();
     private ConnectionFactory() { } // impede a instanciação
-
-    public static Connection obterConexao() throws SQLException {
+    public static Connection obterConexao()
+            throws SQLException {
         return DriverManager.getConnection(
                 PROPS.getProperty("db.url"),
                 PROPS.getProperty("db.user"),
@@ -35,4 +35,3 @@ public final class ConnectionFactory {
         }
     }
 }
-
