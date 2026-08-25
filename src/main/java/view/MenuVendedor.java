@@ -29,7 +29,12 @@ public class MenuVendedor {
     }
 
     private void listar() {
-
+        List<Vendedor> lista = new VendedorDAO().listar();
+        String aux = "";
+        for (Vendedor vendedor : lista){
+            aux += vendedor.getId() + "    | " + vendedor.getNome() + "\n";
+        }
+        showMessageDialog(null, aux);
     }
 
     private void inserir() {
