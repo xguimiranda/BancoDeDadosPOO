@@ -3,8 +3,9 @@ package view;
 import dao.VendedorDAO;
 import model.Vendedor;
 
-import static javax.swing.JOptionPane.INFORMATION_MESSAGE;
-import static javax.swing.JOptionPane.showInputDialog;
+import java.util.List;
+
+import static javax.swing.JOptionPane.*;
 
 public class MenuVendedor {
     public void menu() {
